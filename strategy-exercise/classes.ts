@@ -8,8 +8,8 @@ import {
 abstract class Character {
   weaponBehaviour: WeaponBehaviour;
 
-  public performFight() {
-    this.weaponBehaviour.fight();
+  public fight() {
+    this.weaponBehaviour.useWeapon();
   }
 
   public setWeaponBehaviour(weaponBehaviour: WeaponBehaviour) {
