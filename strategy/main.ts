@@ -1,5 +1,5 @@
-import { MallardDuck, ModelDuck } from "./classes";
-import { FlyRocketPowered } from "./strategies";
+import { MallardDuck, ModelDuck } from "./classes.ts";
+import { FlyRocketPowered } from "./strategies.ts";
 
 const mallardDuck = new MallardDuck();
 

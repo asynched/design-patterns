@@ -1,4 +1,4 @@
-import { FlyBehaviour, QuackBehaviour } from "./interfaces";
+import { FlyBehaviour, QuackBehaviour } from "./interfaces.ts";
 
 export class FlyWithWings implements FlyBehaviour {
   public fly(): void {

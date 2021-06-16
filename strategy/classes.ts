@@ -1,5 +1,5 @@
-import { FlyBehaviour, QuackBehaviour } from "./interfaces";
-import { FlyNoWay, FlyWithWings, Quack } from "./strategies";
+import { FlyBehaviour, QuackBehaviour } from "./interfaces.ts";
+import { FlyNoWay, FlyWithWings, Quack } from "./strategies.ts";
 
 abstract class Duck {
   flyBehaviour: FlyBehaviour;
