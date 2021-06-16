@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "strict": true
+  }
+}
