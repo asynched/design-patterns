@@ -20,12 +20,12 @@ export class AxeBehaviour implements WeaponBehaviour {
 
 export class SwordBehaviour implements WeaponBehaviour {
   public useWeapon() {
-    console.log("⚔");
+    console.log("⚔️");
   }
 }
 
 export class CannotFightBehaviour implements WeaponBehaviour {
   public useWeapon() {
-    console.log("I cannot useWeapon! :(");
+    console.log("I cannot use a weapon! :(");
   }
 }

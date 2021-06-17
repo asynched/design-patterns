@@ -94,7 +94,7 @@ export class CurrentConditionsDisplay
 export class StatisticsDisplay
   implements Observer<WeatherInfo>, DisplayElement
 {
-  weatherInfoArray: WeatherInfo[];
+  private weatherInfoArray: WeatherInfo[];
 
   constructor() {
     this.weatherInfoArray = [];
