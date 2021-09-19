@@ -1,3 +1,3 @@
 export interface WeaponBehaviour {
-  useWeapon(): void;
+  useWeapon(): void
 }

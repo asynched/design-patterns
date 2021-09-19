@@ -8,12 +8,10 @@ Os códigos Typescript estão sendo executados através do `Deno`. As aplicaçõ
 $ deno --config ./tsconfig.json -A nome_do_arquivo.ts
 ```
 
-Para facilitar a execução do projeto também pode ser criado um `alias`:
+Para facilitar a execução, você pode executar o comando `yarn test` no terminal com o caminho para o arquivo principal
 
 ```sh
-$ alias rundp="deno --config ./tsconfig.json -A"
-
-$ rundp strategy/main.ts
+$ yarn test command/main.ts
 ```
 
 ## Autor

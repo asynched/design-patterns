@@ -1,46 +1,46 @@
-import { WeaponBehaviour } from "./interfaces.ts";
+import { WeaponBehaviour } from './interfaces.ts'
 import {
   CannotFightBehaviour,
   AxeBehaviour,
   SwordBehaviour,
-} from "./strategies.ts";
+} from './strategies.ts'
 
 abstract class Character {
-  weaponBehaviour: WeaponBehaviour;
+  weaponBehaviour: WeaponBehaviour
 
   public fight() {
-    this.weaponBehaviour.useWeapon();
+    this.weaponBehaviour.useWeapon()
   }
 
   public setWeaponBehaviour(weaponBehaviour: WeaponBehaviour) {
-    this.weaponBehaviour = weaponBehaviour;
+    this.weaponBehaviour = weaponBehaviour
   }
 }
 
 export class Queen extends Character {
   constructor() {
-    super();
-    this.weaponBehaviour = new CannotFightBehaviour();
+    super()
+    this.weaponBehaviour = new CannotFightBehaviour()
   }
 }
 
 export class King extends Character {
   constructor() {
-    super();
-    this.weaponBehaviour = new CannotFightBehaviour();
+    super()
+    this.weaponBehaviour = new CannotFightBehaviour()
   }
 }
 
 export class Troll extends Character {
   constructor() {
-    super();
-    this.weaponBehaviour = new AxeBehaviour();
+    super()
+    this.weaponBehaviour = new AxeBehaviour()
   }
 }
 
 export class Knight extends Character {
   constructor() {
-    super();
-    this.weaponBehaviour = new SwordBehaviour();
+    super()
+    this.weaponBehaviour = new SwordBehaviour()
   }
 }

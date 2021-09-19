@@ -1,0 +1,6 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "test": "deno run --config ./tsconfig.json -A"
+  }
+}

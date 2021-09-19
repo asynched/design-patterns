@@ -1,21 +1,21 @@
-import { Mocha, Soy } from "./decorators.ts";
-import { Coffee, Decaf } from "./classes.ts";
+import { Mocha, Soy } from './decorators.ts'
+import { Coffee, Decaf } from './classes.ts'
 
-const coffee = new Coffee();
-const coffeeWithMocha = new Mocha(coffee);
+const coffee = new Coffee()
+const coffeeWithMocha = new Mocha(coffee)
 
-coffeeWithMocha.setSize("tall");
+coffeeWithMocha.setSize('tall')
 
-const coffeeWithDoubleMocha = new Mocha(coffeeWithMocha);
+const coffeeWithDoubleMocha = new Mocha(coffeeWithMocha)
 
-console.log(coffeeWithDoubleMocha.getDescription());
-console.log(coffeeWithDoubleMocha.cost());
+console.log(coffeeWithDoubleMocha.getDescription())
+console.log(coffeeWithDoubleMocha.cost())
 
-const decaf = new Decaf();
-const decafWithMocha = new Mocha(decaf);
-const decafWithMochaAndSoy = new Soy(decafWithMocha);
+const decaf = new Decaf()
+const decafWithMocha = new Mocha(decaf)
+const decafWithMochaAndSoy = new Soy(decafWithMocha)
 
-decafWithMochaAndSoy.setSize("venti");
+decafWithMochaAndSoy.setSize('venti')
 
-console.log(decafWithMochaAndSoy.getDescription());
-console.log(decafWithMochaAndSoy.cost());
+console.log(decafWithMochaAndSoy.getDescription())
+console.log(decafWithMochaAndSoy.cost())

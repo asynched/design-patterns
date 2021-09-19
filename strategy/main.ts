@@ -1,11 +1,11 @@
-import { MallardDuck, ModelDuck } from "./classes.ts";
-import { FlyRocketPowered } from "./strategies.ts";
+import { MallardDuck, ModelDuck } from './classes.ts'
+import { FlyRocketPowered } from './strategies.ts'
 
-const mallardDuck = new MallardDuck();
+const mallardDuck = new MallardDuck()
 
-mallardDuck.display();
-mallardDuck.performFly();
-mallardDuck.performQuack();
+mallardDuck.display()
+mallardDuck.performFly()
+mallardDuck.performQuack()
 
 /**
  * O pato modelo não consegue voar, uma vez que
@@ -15,9 +15,9 @@ mallardDuck.performQuack();
  * utilizando o método setFlyBehaviour da classe
  * pai (Duck).
  */
-const modelDuck = new ModelDuck();
+const modelDuck = new ModelDuck()
 
-modelDuck.display();
-modelDuck.performFly();
-modelDuck.setFlyBehaviour(new FlyRocketPowered());
-modelDuck.performFly();
+modelDuck.display()
+modelDuck.performFly()
+modelDuck.setFlyBehaviour(new FlyRocketPowered())
+modelDuck.performFly()
